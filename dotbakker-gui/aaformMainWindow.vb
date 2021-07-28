@@ -52,15 +52,15 @@ Public Class aaformMainWindow
 
                 ' Check if a file with the current number exists, and
                 ' copy it using the new filename if it doesn't.
-                If Not IO.File.Exists(DirectoryToLookIn.ToString & "\" & NoQuotes.Replace(DirectoryToLookIn.ToString, String.Empty) & ".bak" & CurrentNumber) Then
+                If Not IO.File.Exists(DirectoryToLookIn.ToString & NoQuotes.Replace(DirectoryToLookIn.ToString, String.Empty) & ".bak" & CurrentNumber) Then
 
                     ' Copy the file using the new name.
                     IO.File.Copy(DirectoryToLookIn.ToString & "\" & FileName.ToString,
-                                 DirectoryToLookIn.ToString & "\" & NoQuotes.Replace(DirectoryToLookIn.ToString, String.Empty) & ".bak" & CurrentNumber)
+                                 DirectoryToLookIn.ToString & NoQuotes.Replace(DirectoryToLookIn.ToString, String.Empty) & ".bak" & CurrentNumber)
 
                     ' Output text.
                     textboxOutput.AppendText("New file path:" & vbCrLf)
-                    textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & NoQuotes.Replace(DirectoryToLookIn.ToString, String.Empty) & ".bak" & CurrentNumber)
+                    textboxOutput.AppendText(DirectoryToLookIn.ToString & NoQuotes.Replace(DirectoryToLookIn.ToString, String.Empty) & ".bak" & CurrentNumber)
                     textboxOutput.AppendText(vbCrLf)
 
                 Else
