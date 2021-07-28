@@ -36,7 +36,7 @@
                                  DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
 
                     ' Output text.
-                    textboxOutput.AppendText("New file path:")
+                    textboxOutput.AppendText("New file path:" & vbCrLf)
                     textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
                     textboxOutput.AppendText(vbCrLf)
 
