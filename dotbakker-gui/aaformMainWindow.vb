@@ -29,7 +29,7 @@
 
                 ' Check if a file with the current number exists, and
                 ' copy it using the new filename if it doesn't.
-                If Not IO.File.Exists(DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber) Then
+                If Not IO.File.Exists(DirectoryToLookIn.ToString & "\" & NoQuotes.Replace(DirectoryToLookIn.ToString, String.Empty) & ".bak" & CurrentNumber) Then
 
                     ' Copy the file using the new name.
                     IO.File.Copy(DirectoryToLookIn.ToString & "\" & FileName.ToString,
