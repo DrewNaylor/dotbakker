@@ -22,10 +22,17 @@ Partial Class aaformMainWindow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        Me.SuspendLayout()
+        '
+        'aaformMainWindow
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.ClientSize = New System.Drawing.Size(440, 271)
+        Me.Name = "aaformMainWindow"
+        Me.Text = "dotbakker-gui"
+        Me.ResumeLayout(False)
+
     End Sub
 
 End Class
