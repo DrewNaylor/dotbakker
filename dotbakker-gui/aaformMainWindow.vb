@@ -28,9 +28,12 @@
             For Each FileName In FilesList
 
                 ' Check if a file with the current number exists, and
-                ' create it if it doesn't.
+                ' copy it using the new filename if it doesn't.
                 If Not IO.File.Exists(DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber) Then
 
+                    ' Copy the file using the new name.
+                    IO.File.Copy(DirectoryToLookIn.ToString & "\" & FileName.ToString,
+                                 DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
 
                     textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
                     textboxOutput.AppendText(vbCrLf)
