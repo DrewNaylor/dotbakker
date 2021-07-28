@@ -40,7 +40,8 @@
                     textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
                     textboxOutput.AppendText(vbCrLf)
 
-                    ' 
+                    ' Increase integer.
+                    CurrentNumber = CurrentNumber + 1
                 End If
 
 
