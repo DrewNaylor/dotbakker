@@ -26,6 +26,7 @@ Partial Class aaformMainWindow
         Me.buttonBrowse = New System.Windows.Forms.Button()
         Me.buttonAddDotBak = New System.Windows.Forms.Button()
         Me.textboxOutput = New System.Windows.Forms.TextBox()
+        Me.OpenFileDialogBrowse = New System.Windows.Forms.OpenFileDialog()
         Me.SuspendLayout()
         '
         'textboxFilePath
@@ -71,6 +72,12 @@ Partial Class aaformMainWindow
         Me.textboxOutput.Size = New System.Drawing.Size(416, 173)
         Me.textboxOutput.TabIndex = 3
         '
+        'OpenFileDialogBrowse
+        '
+        Me.OpenFileDialogBrowse.FileName = "OpenFileDialog1"
+        Me.OpenFileDialogBrowse.Filter = "All files|*.*"
+        Me.OpenFileDialogBrowse.Title = "Browse"
+        '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -91,4 +98,5 @@ Partial Class aaformMainWindow
     Friend WithEvents buttonBrowse As Button
     Friend WithEvents buttonAddDotBak As Button
     Friend WithEvents textboxOutput As TextBox
+    Friend WithEvents OpenFileDialogBrowse As OpenFileDialog
 End Class
