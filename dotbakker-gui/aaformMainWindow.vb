@@ -13,8 +13,13 @@
             ' Store a list of all the files in the dir.
             Dim FilesList As IO.FileInfo() = DirectoryToLookIn.GetFiles()
 
+            ' FileInfo for later use.
+            Dim FileName As IO.FileInfo
+
             ' Loop through the files in the directory and find the lowest number.
-            For Each FileInDir As 
+            For Each FileName In FilesList
+
+            Next
         End If
     End Sub
 End Class
