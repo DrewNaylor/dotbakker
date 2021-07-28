@@ -33,11 +33,11 @@
 
                     ' Copy the file using the new name.
                     IO.File.Copy(DirectoryToLookIn.ToString & "\" & FileName.ToString,
-                                 DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
+                                 DirectoryToLookIn.ToString & "\" & NoQuotes.Replace(DirectoryToLookIn.ToString, String.Empty) & ".bak" & CurrentNumber)
 
                     ' Output text.
                     textboxOutput.AppendText("New file path:" & vbCrLf)
-                    textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
+                    textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & NoQuotes.Replace(DirectoryToLookIn.ToString, String.Empty) & ".bak" & CurrentNumber)
                     textboxOutput.AppendText(vbCrLf)
 
                 Else
