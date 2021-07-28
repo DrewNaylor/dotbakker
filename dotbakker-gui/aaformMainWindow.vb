@@ -35,8 +35,12 @@
                     IO.File.Copy(DirectoryToLookIn.ToString & "\" & FileName.ToString,
                                  DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
 
+                    ' Output text.
+                    textboxOutput.AppendText("New file path:")
                     textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
                     textboxOutput.AppendText(vbCrLf)
+
+                    ' 
                 End If
 
 
