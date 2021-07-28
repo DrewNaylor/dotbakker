@@ -27,7 +27,11 @@
             ' Loop through the files in the directory and find the lowest number.
             For Each FileName In FilesList
 
+                ' Check if a file with the current number exists, and
+                ' create it if it doesn't.
+                If Not IO.File.Exists(DirectoryToLookIn.ToString & "\" & FileName.ToString) Then
 
+                End If
 
                 textboxOutput.AppendText(FileName.ToString)
                 textboxOutput.AppendText(vbCrLf)
