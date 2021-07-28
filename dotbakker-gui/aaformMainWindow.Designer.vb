@@ -34,13 +34,13 @@ Partial Class aaformMainWindow
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.textboxFilePath.Location = New System.Drawing.Point(13, 13)
         Me.textboxFilePath.Name = "textboxFilePath"
-        Me.textboxFilePath.Size = New System.Drawing.Size(342, 20)
+        Me.textboxFilePath.Size = New System.Drawing.Size(334, 20)
         Me.textboxFilePath.TabIndex = 0
         '
         'buttonBrowse
         '
         Me.buttonBrowse.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.buttonBrowse.Location = New System.Drawing.Point(361, 13)
+        Me.buttonBrowse.Location = New System.Drawing.Point(353, 13)
         Me.buttonBrowse.Name = "buttonBrowse"
         Me.buttonBrowse.Size = New System.Drawing.Size(75, 23)
         Me.buttonBrowse.TabIndex = 1
@@ -49,20 +49,25 @@ Partial Class aaformMainWindow
         '
         'buttonAddDotBak
         '
-        Me.buttonAddDotBak.Location = New System.Drawing.Point(13, 40)
+        Me.buttonAddDotBak.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.buttonAddDotBak.Location = New System.Drawing.Point(13, 39)
         Me.buttonAddDotBak.Name = "buttonAddDotBak"
-        Me.buttonAddDotBak.Size = New System.Drawing.Size(146, 39)
+        Me.buttonAddDotBak.Size = New System.Drawing.Size(415, 39)
         Me.buttonAddDotBak.TabIndex = 2
         Me.buttonAddDotBak.Text = "Copy and add "".bak#"""
         Me.buttonAddDotBak.UseVisualStyleBackColor = True
         '
         'textboxOutput
         '
-        Me.textboxOutput.Location = New System.Drawing.Point(13, 86)
+        Me.textboxOutput.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.textboxOutput.Location = New System.Drawing.Point(12, 86)
         Me.textboxOutput.Multiline = True
         Me.textboxOutput.Name = "textboxOutput"
         Me.textboxOutput.ReadOnly = True
-        Me.textboxOutput.Size = New System.Drawing.Size(415, 173)
+        Me.textboxOutput.Size = New System.Drawing.Size(416, 173)
         Me.textboxOutput.TabIndex = 3
         '
         'aaformMainWindow
