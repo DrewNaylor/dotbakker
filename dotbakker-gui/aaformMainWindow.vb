@@ -29,10 +29,10 @@
 
                 ' Check if a file with the current number exists, and
                 ' create it if it doesn't.
-                If Not IO.File.Exists(DirectoryToLookIn.ToString & "\" & FileName.ToString) Then
+                If Not IO.File.Exists(DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber) Then
 
 
-                    textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & FileName.ToString)
+                    textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & FileName.ToString & ".bak" & CurrentNumber)
                     textboxOutput.AppendText(vbCrLf)
                 End If
 
