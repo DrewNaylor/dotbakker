@@ -67,6 +67,7 @@ Partial Class aaformMainWindow
         Me.textboxOutput.Multiline = True
         Me.textboxOutput.Name = "textboxOutput"
         Me.textboxOutput.ReadOnly = True
+        Me.textboxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.textboxOutput.Size = New System.Drawing.Size(416, 173)
         Me.textboxOutput.TabIndex = 3
         '

@@ -18,7 +18,8 @@
 
             ' Loop through the files in the directory and find the lowest number.
             For Each FileName In FilesList
-
+                textboxOutput.AppendText(FileName.ToString)
+                textboxOutput.AppendText(vbCrLf)
             Next
         End If
     End Sub
