@@ -31,10 +31,12 @@
                 ' create it if it doesn't.
                 If Not IO.File.Exists(DirectoryToLookIn.ToString & "\" & FileName.ToString) Then
 
+
+                    textboxOutput.AppendText(DirectoryToLookIn.ToString & "\" & FileName.ToString)
+                    textboxOutput.AppendText(vbCrLf)
                 End If
 
-                textboxOutput.AppendText(FileName.ToString)
-                textboxOutput.AppendText(vbCrLf)
+
             Next
         End If
     End Sub
