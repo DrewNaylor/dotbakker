@@ -50,4 +50,13 @@
             Next
         End If
     End Sub
+
+    Private Sub buttonBrowse_Click(sender As Object, e As EventArgs) Handles buttonBrowse.Click
+        ' Get the file from the OpenFileDialog.
+
+        If OpenFileDialogBrowse.ShowDialog = DialogResult.OK Then
+            ' Put the filepath into the textbox.
+            textboxFilePath.Text = OpenFileDialogBrowse.FileName
+        End If
+    End Sub
 End Class

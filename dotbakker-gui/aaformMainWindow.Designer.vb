@@ -74,8 +74,8 @@ Partial Class aaformMainWindow
         '
         'OpenFileDialogBrowse
         '
-        Me.OpenFileDialogBrowse.FileName = "OpenFileDialog1"
         Me.OpenFileDialogBrowse.Filter = "All files|*.*"
+        Me.OpenFileDialogBrowse.RestoreDirectory = True
         Me.OpenFileDialogBrowse.Title = "Browse"
         '
         'aaformMainWindow
